@@ -30,7 +30,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "e962d1d4-8b07-4e76-89be-ecd1f1423b6d",
+      "applicationExtensionKey": "b6d9bb1c-c7a2-48d7-8013-2389e79133ec",
        "save": {
            "url": "https://stark-basin-22502.herokuapp.com/save",
             "verb": "POST",
