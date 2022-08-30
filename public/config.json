@@ -16,7 +16,7 @@
         "execute": {
             "inArguments": [
                 {
-                  "to": "{{Event.DEAudience-7ec9af92-67e4-0552-bbca-83664ee110cc."TwilioNumber"}}" 
+                  "to": "{{Event.DEAudience-7ec9af92-67e4-0552-bbca-83664ee110cc.TwilioNumber}}" 
                 }               
             ],
             "outArguments": [],
