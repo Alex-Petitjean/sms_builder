@@ -111,8 +111,7 @@ exports.execute = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-    //console.log("Executed: "+req.body.inArguments[0]);
-    
+
     var requestBody = req.body.inArguments[0];
 
     const accountSid = requestBody.accountSid;
@@ -122,6 +121,12 @@ exports.execute = function (req, res) {
     const body = requestBody.body;;
 
     const client = require('twilio')(accountSid, authToken); 
+
+    console.log('AccountSID: ', accountSid)
+    console.log('authToken: ', authToken)
+    console.log('to: ', to)
+    console.log('from: ', from)
+    console.log('body: ', body)
      
     client.messages 
           .create({ 
@@ -134,7 +139,7 @@ exports.execute = function (req, res) {
 
 
 
-    // FOR TESTING
+   // FOR TESTING
     logData(req);
     res.status(200).send('Execute');
 
@@ -153,7 +158,7 @@ exports.execute = function (req, res) {
     //         var decodedArgs = decoded.inArguments[0];
             
     //         logData(req);
-    //         res.send(200, 'Execute');
+    //         res.status(200).send('Execute');
     //     } else {
     //         console.error('inArguments invalid.');
     //         return res.status(400).end();
