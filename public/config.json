@@ -16,7 +16,7 @@
         "execute": {
             "inArguments": [
                 {
-                  "to": "{{Event.BB57F55D-A82A-44DB-8A4C-EE28F7F19D18.TwilioNumber}}" 
+                  "to": "{{Event.TwilioV1.TwilioNumber}}" 
                 }               
             ],
             "outArguments": [],
