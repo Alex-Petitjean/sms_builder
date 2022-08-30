@@ -62,7 +62,25 @@ exports.edit = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
     logData(req);
-    res.send(200, 'Edit');
+    res.status(200).send('Edit');
+};
+
+/*
+ * POST Handler for /stop/ route of Activity.
+ */
+exports.stop = function (req, res) {
+    
+    console.log("5 -- For Stop");	
+    console.log("4");	
+    console.log("3");	
+    console.log("2");	
+    console.log("1");	
+    //console.log("Saved: "+req.body.inArguments[0]);
+    
+    // Data from the req and put it in an array accessible to the main app.
+    console.log( req.body );
+    logData(req);
+    res.status(200).send('Stop');
 };
 
 /*
@@ -80,7 +98,7 @@ exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     console.log( req.body );
     logData(req);
-    res.send(200, 'Save');
+    res.status(200).send('Save');
 };
 
 /*
@@ -108,7 +126,7 @@ exports.execute = function (req, res) {
     client.messages 
           .create({ 
              body: body,
-             messagingService: messagingService,
+             from: from,
              to: to
            }) 
           .then(message => console.log(message.sid)) 
@@ -118,7 +136,7 @@ exports.execute = function (req, res) {
 
     // FOR TESTING
     logData(req);
-    res.send(200, 'Publish');
+    res.status(200).send('Execute');
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
@@ -157,9 +175,9 @@ exports.publish = function (req, res) {
     //console.log("Published: "+req.body.inArguments[0]);        
     
     // Data from the req and put it in an array accessible to the main app.
-    //console.log( req.body );
-//     logData(req);
-//     res.send(200, 'Publish');
+    console.log( req.body );
+    logData(req);
+    res.status(200).send('Publish');
 };
 
 /*
@@ -177,5 +195,5 @@ exports.validate = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
     logData(req);
-    res.send(200, 'Validate');
+    res.status(200).send('Validate');
 };
