@@ -20,7 +20,7 @@
                 }               
             ],
             "outArguments": [],
-            "url": "https://stark-basin-22502.herokuapp.com/execute",
+            "url": "https://stark-basin-22502.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
