@@ -36,7 +36,7 @@ define([
     }
 
   function initialize(data) {
-        console.log("Initializing data data: "+ JSON.stringify(data));
+        console.log("Initializing data: "+ JSON.stringify(data));
         if (data) {
             payload = data;
         }    
