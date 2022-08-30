@@ -105,7 +105,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Event.TwilioV1-b6d9bb1c-c7a2-48d7-8013-2389e79133ec.TwilioNumber}}" //<----This should map to your data extension name and phone number column
+            "to": "{{Event.BB57F55D-A82A-44DB-8A4C-EE28F7F19D18.TwilioNumber}}" //<----This should map to your data extension name and phone number column
         }];
 
         payload['metaData'].isConfigured = true;
