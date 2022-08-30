@@ -16,12 +16,11 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}",
                   "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
                 }               
             ],
             "outArguments": [],
-            "url": "https://stark-basin-22502.herokuapp.com/execute",
+            "url": "https://stark-basin-22502.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
