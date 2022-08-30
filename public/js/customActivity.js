@@ -14,6 +14,11 @@ define([
     var currentStep = steps[0].key;
 
     $(window).ready(onRender);
+    connection.trigger('requestSchema');
+    connection.on('requestedSchema', function (data) {
+        // save schema
+        console.log('*** Schema ***', JSON.stringify(data['schema']));
+     });
 
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
